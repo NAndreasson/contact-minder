@@ -2,59 +2,39 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Laravel PHP Framework</title>
-	<style>
-		.profile {
-			position: relative;
-
-			width: 250px;
-			height: 400px;
-			border-radius: 8px;
-			/* Rectangle 1: */
-			background: #FFFFFF;
-			-moz-box-shadow:    0px 1px 3px 0px rgba(0,0,0,0.50);
-			box-shadow:         0px 1px 3px 0px rgba(0,0,0,0.50);
-
-		}
-
-		.profile-picture {
-			width: 130px;
-			height: 130px;
-
-			border-radius: 65px;
-
-			display: block;
-			margin: 0 auto;
-
-			/* Oval 1: */
-			/* Sketch doesnt export pattern fills at this point */
-			-moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.50);
-			box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.50);	
-		}
-
-		.firstname, .lastname {
-			margin: 0;
-			font-family: Helvetica;
-			font-size: 24px;
-			color: #5D5D5D;
-			line-height: 29px;
-
-			text-align: center;
-		}
-
-	</style>
+	<title>Contact minder</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="welcome">
+	<div id="contactapp" class="welcome">
 
-		<div class="profile">
-
-			<img class="profile-picture">
-
-			<h2 class="firstname">Andréasson</h2>
-			<h2 class="lastname">Niklas</h2>
-
+		<div id="contacts">
+			
 		</div>
+
 	</div>
+
+
+	<script type="text/template" id="contact-template">
+		<div class="profile">
+			<img class="profile-picture" src="me.jpeg">
+			<div class="name">
+				<h2 class="lastname"><%= lastname %></h2>
+				<h2 class="firstname"><%= firstname %></h2>
+			</div>
+		</div>
+	</script>
+
+	<script src="js/libs/jquery-2.1.1.js"></script>
+	<script src="js/libs/underscore.js"></script>
+	<script src="js/libs/mustache.js"></script>
+	<script src="js/libs/backbone.js"></script>
+
+
+	<script src="js/models/contact.js"></script>
+	<script src="js/collections/contacts.js"></script>
+	<script src="js/views/contacts.js"></script>
+	<script src="js/views/app.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
