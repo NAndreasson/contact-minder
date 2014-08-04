@@ -2,8 +2,8 @@ var app = app || {};
 
 app.ContactView = Backbone.View.extend({
 
-	tagName: 'li',
-
+	className: 'profile',
+	
 	template: _.template( $('#contact-template').html() ),
 
 	render: function() {

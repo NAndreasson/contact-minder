@@ -7,21 +7,14 @@
 </head>
 <body>
 	<div id="contactapp" class="welcome">
-
-		<div id="contacts">
-			
-		</div>
-
+		<div id="contacts"></div>
 	</div>
 
-
 	<script type="text/template" id="contact-template">
-		<div class="profile">
-			<img class="profile-picture" src="me.jpeg">
-			<div class="name">
-				<h2 class="lastname"><%= lastname %></h2>
-				<h2 class="firstname"><%= firstname %></h2>
-			</div>
+		<img class="profile-picture" src="me.jpeg">
+		<div class="name">
+			<h2 class="lastname"><%= lastname %></h2>
+			<h2 class="firstname"><%= firstname %></h2>
 		</div>
 	</script>
 
