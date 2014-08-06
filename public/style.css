@@ -43,3 +43,13 @@
 
 	text-align: center;
 }
+
+#topbar {
+	height: 60px;
+	position: fixed;
+	z-index: 9999;
+	background: white;
+	width: 100%;
+	box-shadow: 0 3px 6px #DDD;
+	opacity: 0.5;
+}

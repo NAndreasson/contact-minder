@@ -7,6 +7,7 @@
 </head>
 <body>
 	<div id="contactapp" class="welcome">
+		<div id="topbar"></div>	
 		<div id="contacts"></div>
 	</div>
 
