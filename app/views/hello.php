@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contact minder</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 	<div id="contactapp" class="welcome">
@@ -20,16 +20,16 @@
 		</div>
 	</script>
 
-	<script src="js/libs/jquery-2.1.1.js"></script>
-	<script src="js/libs/underscore.js"></script>
-	<script src="js/libs/mustache.js"></script>
-	<script src="js/libs/backbone.js"></script>
+	<script src="assets/js/libs/jquery-2.1.1.js"></script>
+	<script src="assets/js/libs/underscore.js"></script>
+	<script src="assets/js/libs/mustache.js"></script>
+	<script src="assets/js/libs/backbone.js"></script>
 
 
-	<script src="js/models/contact.js"></script>
-	<script src="js/collections/contacts.js"></script>
-	<script src="js/views/contacts.js"></script>
-	<script src="js/views/app.js"></script>
-	<script src="js/app.js"></script>
+	<script src="assets/js/models/contact.js"></script>
+	<script src="assets/js/collections/contacts.js"></script>
+	<script src="assets/js/views/contacts.js"></script>
+	<script src="assets/js/views/app.js"></script>
+	<script src="assets/js/app.js"></script>
 </body>
 </html>
