@@ -44,12 +44,35 @@
 	text-align: center;
 }
 
-#topbar {
-	height: 60px;
+body {
+	margin: 0;
+	background: #F5F5F5;
+}
+
+#search {
 	position: fixed;
 	z-index: 9999;
-	background: white;
 	width: 100%;
+	height: 60px;
+
+	font-size: 2em;
+	font-style: italic;
+	border: 0;
+	text-align: center;
+
+	opacity: 0.95;
 	box-shadow: 0 3px 6px #DDD;
-	opacity: 0.5;
+
+	color: #4E4E4E;
+}
+
+#contacts {
+	padding-top: 75px;
+	width: 80%;
+	float: right;
+}
+
+#navbar {
+	float: left;
+	width: 20%;
 }

@@ -7,7 +7,8 @@
 </head>
 <body>
 	<div id="contactapp" class="welcome">
-		<div id="topbar"></div>	
+		<input type="text" id="search" placeholder="Search...">
+		<div id="navbar"></div>
 		<div id="contacts"></div>
 	</div>
 
