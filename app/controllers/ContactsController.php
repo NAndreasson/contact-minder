@@ -82,5 +82,14 @@ class ContactsController extends \BaseController {
 		//
 	}
 
+	public function search($query)
+	{
+		// find all of the contact with a first name like the query string
+		$filteredContacts = Contact::where('firstname', 'LIKE', '%' . $query . '%')->get();
+
+		return $filteredContacts;
+	}
 
 }
+
+

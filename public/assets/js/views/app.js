@@ -4,10 +4,11 @@ app.AppView = Backbone.View.extend({
 
 	el: '#contactapp',
 
+	events: {
+		'keyup #search': 'search'
+	},
+
 	initialize: function() {
-
-		console.log('Add ');
-
 		this.listenTo(app.Contacts, 'add', this.addOne);
 		this.listenTo(app.Contacts, 'reset', this.addAll);
 
@@ -17,13 +18,9 @@ app.AppView = Backbone.View.extend({
 	},
 
 	render: function() {
-		console.log('Rende');
-
 	},
 
 	addOne: function(contact) {
-		console.log('Add one');
-
 		var view = new app.ContactView({ model: contact });
 		$('#contacts').append( view.render().el );
 	}, 
@@ -33,6 +30,12 @@ app.AppView = Backbone.View.extend({
 
 		this.$('#contacts').html('');
 		app.Contacts.each(this.addOne, this);
+	},
+
+	search: function() {
+		var query = $('#search').val();
+
+		app.Contacts.findByName( query );	
 	}
 
 });
