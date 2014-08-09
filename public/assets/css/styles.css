@@ -9,7 +9,6 @@
   border-radius: 8px;
   /* Rectangle 1: */
   background: #FFFFFF;
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   transition: transform 0.07s; }
@@ -25,7 +24,6 @@
   margin: 0 auto;
   /* Oval 1: */
   /* Sketch doesnt export pattern fills at this point */
-  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.5); }
 
 .name {
@@ -38,6 +36,17 @@
   color: #5D5D5D;
   line-height: 29px;
   text-align: center; }
+
+.contact-info {
+  text-align: center;
+  margin-top: 10px; }
+
+.twitter {
+  background: url('/assets/img/twitter.png');
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  display: inline-block; }
 
 body {
   margin: 0;

@@ -1,3 +1,6 @@
+$white: #FFFFFF;
+$social-icon-size: 25px;
+
 .profile {
 	position: relative;
 	float: left;
@@ -10,8 +13,7 @@
 	height: 300px;
 	border-radius: 8px;
 	/* Rectangle 1: */
-	background: #FFFFFF;
-	-moz-box-shadow:    0px 1px 3px 0px rgba(0,0,0,0.50);
+	background: $white;
 	box-shadow:         0px 1px 3px 0px rgba(0,0,0,0.50);
 
 	cursor: pointer;
@@ -34,7 +36,6 @@
 
 	/* Oval 1: */
 	/* Sketch doesnt export pattern fills at this point */
-	-moz-box-shadow:    0px 1px 2px 0px rgba(0,0,0,0.50);
 	box-shadow:         0px 1px 2px 0px rgba(0,0,0,0.50);	
 }
 
@@ -50,6 +51,19 @@
 	line-height: 29px;
 
 	text-align: center;
+}
+
+.contact-info {
+	text-align: center;	
+	margin-top: 10px;
+}
+
+.twitter {
+	background: url('/assets/img/twitter.png');
+	background-size: $social-icon-size $social-icon-size;
+	width: $social-icon-size;
+	height: $social-icon-size;
+	display: inline-block;
 }
 
 body {
