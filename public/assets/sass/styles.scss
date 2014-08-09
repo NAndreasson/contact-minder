@@ -1,6 +1,11 @@
 $white: #FFFFFF;
 $social-icon-size: 25px;
 
+body {
+	margin: 0;
+	background: #F5F5F5;
+}
+
 .profile {
 	position: relative;
 	float: left;
@@ -74,10 +79,6 @@ $social-icon-size: 25px;
 	background-size: $social-icon-size $social-icon-size;
 }
 
-body {
-	margin: 0;
-	background: #F5F5F5;
-}
 
 #search {
 	position: fixed;

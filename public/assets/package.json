@@ -3,6 +3,7 @@
     "gulp": "^3.8.7"
   },
   "dependencies": {
+    "gulp-livereload": "^2.1.0",
     "gulp-sass": "^0.7.2"
   }
 }

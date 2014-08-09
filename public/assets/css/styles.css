@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+  background: #F5F5F5; }
+
 .profile {
   position: relative;
   float: left;
@@ -53,10 +57,6 @@
 .mail {
   background: url('/assets/img/mail.png');
   background-size: 25px 25px; }
-
-body {
-  margin: 0;
-  background: #F5F5F5; }
 
 #search {
   position: fixed;
