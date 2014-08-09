@@ -18,6 +18,14 @@
 			<h2 class="lastname"><%= lastname %></h2>
 			<h2 class="firstname"><%= firstname %></h2>
 		</div>
+		<div class="contact-info">
+		<% if ( twitter ) { %>
+			<span class="contact-icon twitter"></span>
+		<% } %>
+		<% if ( email ) { %>
+			<span class="contact-icon mail"></span>
+		<% } %>
+		</div>
 	</script>
 
 	<script src="assets/js/libs/jquery-2.1.1.js"></script>
