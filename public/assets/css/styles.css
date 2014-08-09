@@ -41,12 +41,18 @@
   text-align: center;
   margin-top: 10px; }
 
-.twitter {
-  background: url('/assets/img/twitter.png');
-  background-size: 25px 25px;
+.contact-icon {
   width: 25px;
   height: 25px;
   display: inline-block; }
+
+.twitter {
+  background: url('/assets/img/twitter.png');
+  background-size: 25px 25px; }
+
+.mail {
+  background: url('/assets/img/mail.png');
+  background-size: 25px 25px; }
 
 body {
   margin: 0;

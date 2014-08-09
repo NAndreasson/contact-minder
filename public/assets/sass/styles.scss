@@ -58,12 +58,20 @@ $social-icon-size: 25px;
 	margin-top: 10px;
 }
 
-.twitter {
-	background: url('/assets/img/twitter.png');
-	background-size: $social-icon-size $social-icon-size;
+.contact-icon {
 	width: $social-icon-size;
 	height: $social-icon-size;
 	display: inline-block;
+}
+
+.twitter {
+	background: url('/assets/img/twitter.png');
+	background-size: $social-icon-size $social-icon-size;
+}
+
+.mail {
+	background: url('/assets/img/mail.png');
+	background-size: $social-icon-size $social-icon-size;
 }
 
 body {
