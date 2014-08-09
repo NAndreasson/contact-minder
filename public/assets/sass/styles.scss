@@ -96,6 +96,10 @@ body {
 	color: #4E4E4E;
 }
 
+#search:focus {
+	outline: 0;
+}
+
 #contacts {
 	padding-top: 75px;
 	width: 80%;

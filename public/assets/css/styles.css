@@ -71,6 +71,9 @@ body {
   box-shadow: 0 3px 6px #DDD;
   color: #4E4E4E; }
 
+#search:focus {
+  outline: 0; }
+
 #contacts {
   padding-top: 75px;
   width: 80%;
