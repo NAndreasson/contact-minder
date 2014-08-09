@@ -4,6 +4,11 @@ class Contact extends Eloquent {
 
 	protected $table = 'contacts';
 
-	protected $fillable = array('firstname', 'lastname');
+	protected $fillable = array(
+    'firstname', 
+    'lastname',
+    'twitter',
+    'email'
+  );
 
 }
