@@ -7,5 +7,10 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('css'));
 });
 
+gulp.task('watch', function () {
+    gulp.watch('sass/**/*.scss', ['sass']);
+});
+
+
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['sass']);
