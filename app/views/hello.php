@@ -19,12 +19,9 @@
 			<h2 class="firstname"><%= firstname %></h2>
 		</div>
 		<div class="contact-info">
-		<% if ( twitter ) { %>
-			<span class="contact-icon twitter"></span>
-		<% } %>
-		<% if ( email ) { %>
-			<span class="contact-icon mail"></span>
-		<% } %>
+		<% _.each(contactdata, function(data) { %>
+			<span class="contact-icon <%= data.type %>"></span>
+		<% }); %>
 		</div>
 	</script>
 
