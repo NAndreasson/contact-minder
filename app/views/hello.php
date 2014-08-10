@@ -8,7 +8,7 @@
 <body>
 	<div id="contactapp" class="welcome">
 		<input type="text" id="search" autocomplete="off" placeholder="Search...">
-		<div id="navbar"></div>
+		<!-- <div id="navbar"></div> -->
 		<div id="contacts"></div>
 	</div>
 
