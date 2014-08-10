@@ -5,7 +5,7 @@ app.AppView = Backbone.View.extend({
 	el: '#contactapp',
 
 	events: {
-		'keyup #search': 'search'
+		'input #search': 'search'
 	},
 
 	initialize: function() {
@@ -35,7 +35,14 @@ app.AppView = Backbone.View.extend({
 	search: function() {
 		var query = $('#search').val();
 
-		app.Contacts.findByName( query );	
+		if ( this.timeoutID ) {
+			clearTimeout(this.timeoutID);
+		}
+
+		// avoid triggering a query for every input 
+		this.timeoutID = setTimeout(function() {
+			app.Contacts.findByName( query );	
+		}, 50);
 	}
 
 });
