@@ -6,17 +6,33 @@ class ContactsTableSeeder extends Seeder {
 	{
 		Eloquent::unguard();
 
-		Contact::create([
+		$contactNiklas = Contact::create([
 			'firstname' => 'Niklas',
-			'lastname' => 'Andréasson',
-			'twitter' => 'AndreassonN',
-			'email' => 'niklas@nandreasson.se'
+			'lastname' => 'Andréasson'
 		]);
 
-		Contact::create([
+		ContactData::create([
+			'contact_id' => $contactNiklas->id,
+			'type' => 'twitter',
+			'value' => 'AndreassonN'
+		]);
+
+		ContactData::create([
+			'contact_id' => $contactNiklas->id,
+			'type' => 'email',
+			'value' => 'niklas@nandreasson.se'
+		]);
+
+
+		$contactPeter = Contact::create([
 			'firstname' => 'Peter',
-			'lastname' => 'Johnson',
-			'email' => 'peter@johnson.com'
+			'lastname' => 'Johnson'
+		]);
+
+		ContactData::create([
+			'contact_id' => $contactPeter->id,
+			'type' => 'email',
+			'value' => 'peter@johnson.com' 
 		]);
 
 		Contact::create([

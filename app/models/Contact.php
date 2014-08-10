@@ -6,9 +6,12 @@ class Contact extends Eloquent {
 
 	protected $fillable = array(
     'firstname', 
-    'lastname',
-    'twitter',
-    'email'
+    'lastname'
   );
+
+  public function contactdata()
+  {
+    return $this->hasMany('ContactData'); 
+  }
 
 }
