@@ -23,6 +23,16 @@ class ContactsTableSeeder extends Seeder {
 			'value' => 'niklas@nandreasson.se'
 		]);
 
+		$contactPeterKarl = Contact::create([
+			'firstname' => 'Peter',
+			'lastname' => 'Karlsson'
+		]);
+
+		ContactData::create([
+			'contact_id' => $contactPeterKarl->id,
+			'type' => 'twitter',
+			'value' => 'peter' 
+		]);
 
 		$contactPeter = Contact::create([
 			'firstname' => 'Peter',
