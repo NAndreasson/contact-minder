@@ -1,6 +1,15 @@
 <?php
 
+use ContactMinder\SearchHandler;
+
 class ContactsController extends \BaseController {
+
+	private $searchHandler;
+
+	public function __construct(SearchHandler $searchHandler)
+	{
+		$this->searchHandler = $searchHandler;
+	}
 
 	/**
 	 * Display a listing of the resource.
@@ -9,7 +18,7 @@ class ContactsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return Contact::all();
+		return Contact::with('contactdata')->get();
 	}
 
 
@@ -82,12 +91,11 @@ class ContactsController extends \BaseController {
 		//
 	}
 
-	public function search($query)
+	public function search($searchQuery)
 	{
-		// find all of the contact with a first name like the query string
-		$filteredContacts = Contact::where('firstname', 'LIKE', '%' . $query . '%')->get();
+		$dbQuery = $this->searchHandler->constructDBQuery( $searchQuery );
 
-		return $filteredContacts;
+		return $dbQuery->get();
 	}
 
 }
