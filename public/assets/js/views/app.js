@@ -26,8 +26,6 @@ app.AppView = Backbone.View.extend({
 	}, 
 
 	addAll: function() {
-		console.log('Add all');
-
 		this.$('#contacts').html('');
 		app.Contacts.each(this.addOne, this);
 	},
