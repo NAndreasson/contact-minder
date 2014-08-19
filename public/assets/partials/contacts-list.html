@@ -1,0 +1,14 @@
+<input type="text" id="search" ng-model="query" autocomplete="off" placeholder="Search...">
+
+<div id="contacts">
+  <div class="profile" ng-repeat="contact in contacts">
+    <img class="profile-picture" src="me.jpeg">
+    <div class="name">
+      <h2 class="lastname">{{ contact.lastname }}</h2>
+      <h2 class="firstname">{{ contact.firstname }}</h2>
+    </div>
+    <div class="contact-info">
+      <span ng-repeat="data in contact.contactdata" class="contact-icon {{ data.type }}"></span>
+    </div>
+  </div>
+</div>

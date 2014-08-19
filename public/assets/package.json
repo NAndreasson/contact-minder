@@ -1,4 +1,6 @@
 {
+  "name": "Contact-minder",
+  "description": "For your contacts",
   "devDependencies": {
     "gulp": "^3.8.7",
     "gulp-concat": "^2.3.4",
