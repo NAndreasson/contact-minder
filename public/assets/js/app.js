@@ -11,11 +11,11 @@ var contactApp = angular.module('contactApp', [
 contactApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/ada', {
+      when('/', {
         templateUrl: 'assets/partials/contacts-list.html',
         controller: 'ContactListCtrl'
       }).
       otherwise({
-        redirectTo: '/ada'
+        redirectTo: '/'
       });
   }]);
