@@ -10,3 +10,11 @@ contactServices.factory('Contact', ['$resource',
       query: {method:'GET', params:{contactId:''}, isArray:true}
     });
   }]);
+
+contactServices.factory('SearchService', ['$resource',
+  function($resource) {
+    return $resource('contacts/search/:query', {}, {
+      query: { method: 'GET', params: { query: '' }, isArray: true}
+    });
+  }
+]);

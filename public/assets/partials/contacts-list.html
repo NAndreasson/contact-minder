@@ -1,4 +1,4 @@
-<input type="text" id="search" ng-model="query" autocomplete="off" placeholder="Search...">
+<input type="text" id="search" ng-change="search()" ng-model="query" autocomplete="off" placeholder="Search...">
 
 <div id="contacts">
   <div class="profile" ng-repeat="contact in contacts">

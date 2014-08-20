@@ -20,12 +20,6 @@
     <div ng-view class="view-frame"></div>
   </div>
 
-	<!-- // <script src="assets/js/libs/jquery-2.1.1.js"></script> -->
-	<!-- // <script src="assets/js/libs/underscore.js"></script> -->
-	<!-- // <script src="assets/js/libs/mustache.js"></script> -->
-	<!-- // <script src="assets/js/libs/backbone.js"></script> -->
-
-
 	<!-- // <script src="assets/js/models/contact.js"></script> -->
 	<!-- // <script src="assets/js/collections/contacts.js"></script> -->
 	<!-- // <script src="assets/js/views/contacts.js"></script> -->
