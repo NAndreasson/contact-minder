@@ -15,3 +15,8 @@ contactControllers.controller('ContactListCtrl', ['$scope', 'Contact', 'SearchSe
       }
     };
   }]);
+
+contactControllers.controller('ContactCtrl', ['$scope', '$routeParams', 'Contact', 
+  function($scope, $routeParams, Contact) {
+    $scope.contact = Contact.get({ contactId: $routeParams.contactId });
+}]);

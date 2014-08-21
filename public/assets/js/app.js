@@ -15,6 +15,10 @@ contactApp.config(['$routeProvider',
         templateUrl: 'assets/partials/contacts-list.html',
         controller: 'ContactListCtrl'
       }).
+      when('/contacts/:contactId', {
+        templateUrl: 'assets/partials/contact.html',
+        controller: 'ContactCtrl'
+      }).
       otherwise({
         redirectTo: '/'
       });
