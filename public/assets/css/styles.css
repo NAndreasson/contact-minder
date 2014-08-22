@@ -82,3 +82,10 @@ body {
 #navbar {
   float: left;
   width: 20%; }
+
+#contact {
+  width: 40%;
+  margin: 10px auto;
+  background: white;
+  border-radius: 7px;
+  padding: 5px; }
