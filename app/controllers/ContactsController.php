@@ -52,7 +52,7 @@ class ContactsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return Contact::find( $id );
+		return Contact::with('contactdata')->find( $id );
 	}
 
 
