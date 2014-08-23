@@ -1,7 +1,7 @@
 <input type="text" id="search" ng-change="search()" ng-model="query" autocomplete="off" placeholder="Search...">
 
 <div id="contacts">
-  <div class="profile" ng-repeat="contact in contacts">
+  <a class="profile" ng-repeat="contact in contacts" href="#/contacts/{{contact.id}}">
     <img class="profile-picture" src="me.jpeg">
     <div class="name">
       <h2 class="lastname">{{ contact.lastname }}</h2>
@@ -10,5 +10,5 @@
     <div class="contact-info">
       <span ng-repeat="data in contact.contactdata" class="contact-icon {{ data.type }}"></span>
     </div>
-  </div>
+  </a>
 </div>
