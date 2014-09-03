@@ -1,4 +1,4 @@
 contact-minder
 ==============
 
-Keep trrack of the contacts in your network
+Keep track of the contacts in your network
